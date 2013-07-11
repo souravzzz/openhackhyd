@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>reveal.js - The HTML Presentation Framework</title>
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<link rel="stylesheet" href="css/custom.css">
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section>
+		<h1>Location.Aware</h1>
+		<p data-fragment-index="0" class="fragment">
+			How To Build Apps That Are Smarter
+		</p>
+		<p>
+			<br>
+		</p>
+		<p>
+			<br>
+		</p>
+		<p>
+			<br>
+		</p>
+		<p>
+			<br>
+		</p>
+		<p>
+			<br>
+		</p>
+		<p data-fragment-index="1" class="fragment">
+			Sourav Chakraborty
+		</p>
+		<p>
+			<br>
+		</p>
+		</section>
+		<section data-background-size="initial">
+		<h1>WHERE</h1>
+		<img class="fragment" style="width: 707.712px; height: 475px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46722/image13.png">
+		</section>
+		<section>
+		<h1>What's Around<br>
+		</h1>
+		</section>
+		<section>
+		<h1>How To Go There?</h1>
+		<img class="fragment" style="width: 744px; height: 496px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46725/image7.png">
+		</section>
+		<section>
+		<h1>MAPS</h1>
+		<img data-fragment-index="0" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46717/image10.png">
+		</section>
+		<section>
+		<h1>Beyond Maps<br>
+		</h1>
+		<img data-fragment-index="0" class="fragment" style="zoom:150%" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46718/image11.png">
+		<img data-fragment-index="1" class="fragment" style="zoom:150%" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46719/image12.png">
+		<br>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 72px;">
+		<font style="font-size: 112px;">Typical Questions</font>
+		<br>
+		</font>
+		</h1>
+		<p data-fragment-index="0" class="fragment">
+			<font style="font-size: 72px;">Where?</font>
+		</p>
+		<p data-fragment-index="1" class="fragment">
+			<font style="font-size: 72px;">What's Happening Here?</font>
+		</p>
+		<p data-fragment-index="2" class="fragment">
+			<font style="font-size: 72px;">What's Around?</font>
+		</p>
+		<p data-fragment-index="3" class="fragment">
+			<font style="font-size: 72px;">When?</font>
+		</p>
+		<p data-fragment-index="4" class="fragment">
+			<font style="font-size: 72px;">Who?</font>
+		</p>
+		<p data-fragment-index="5" class="fragment">
+			<font style="font-size: 72px;">Meta?<br>
+			</font>
+		</p>
+		</section>
+		<section>
+		<h1>Current Location</h1>
+		<p>
+			<br>
+		</p>
+		<p data-fragment-index="0" class="fragment">
+			<font style="font-size: 72px;">Ask</font>
+		</p>
+		<p data-fragment-index="1" class="fragment">
+			<font style="font-size: 72px;">Sniff</font>
+		</p>
+		<p data-fragment-index="2" class="fragment">
+			<font style="font-size: 72px;">Infer</font>
+		</p>
+		<p>
+			<br>
+		</p>
+		</section>
+		<section>
+		<h1>ASK THE USER</h1>
+		<p class="fragment">
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46076/image14.png">
+		</p>
+		</section>
+		<section>
+		<h1>ASK THE BROWSER</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46077/image15.png">
+		<br>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46082/image16.png">
+		<br>
+		</section>
+		<section>
+		<h1>ASK THE BROWSER</h1>
+		<img class="fragment" style="zoom:60%" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46083/image17.png">
+		</section>
+		<section>
+		<h1>ASK THE BROWSER</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46086/image18.png">
+		<br>
+		</section>
+		<section>
+		<h1>W3C Geolocation API</h1>
+<pre class="fragment"><code>navigator.geolocation.getCurrentPosition(function(position)
+{
+	console.log(
+	'Your Coordinates are ’ 
+	+
+	position.coords.latitude
+	+ ' &amp; ’ +
+	position.coords.longitude
+	);
+});</code></pre>
+		</section>
+		<section>
+		<h1>SNIFF</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46087/image19.png">
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46089/image20.png">
+		<br>
+		</section>
+		<section>
+		<h1>IP SNIFFING</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46090/image21.png">
+		<br>
+		<pre class="fragment"><code>http://isithackday.com/hacks/geo/js-location.html</code></pre>
+		<br>
+		</section>
+		<section>
+		<h1>IP SNIFFING</h1>
+		<pre class="fragment"><code>&lt;script type="text/javascript"
+src="http://j.maxmind.com/app/geoip.js"&gt;
+&lt;/script&gt;</code></pre>
+		<p>
+		</p>
+		<pre class="fragment"><code>geoip_latitude
+geoip_longitude
+geoip_city
+geoip_region
+geoip_region_name
+geoip_postal_code
+geoip_country_code
+geoip_country_name </code></pre>
+		<p>
+		</p>
+		</section>
+		<section>
+		<h1>INFER</h1>
+		<img data-fragment-index="0" style="" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46092/image22.png">
+		<img data-fragment-index="1" style="" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46096/image25.png">
+		<br>
+		<img data-fragment-index="2" style="zoom: 80%" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46100/image24.png">
+		<img data-fragment-index="3" style="zoom: 120%" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46095/image23.png">
+		</section>
+		<section>
+		<h1>Query</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46102/image32.png">
+		<br>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46103/image30.png">
+		<br>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 72px;">Too Much Trouble?</font>
+		</h1>
+		<h1 data-fragment-index="0" class="fragment">
+		<font style="font-size: 72px;">Too Many Moving Parts?</font>
+		</h1>
+		<h1 data-fragment-index="1" class="fragment">
+		<font style="font-size: 72px;">Too Many Apis?</font>
+		</h1>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 360px;">YQL</font>
+		</h1>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">GEOCODING</font>
+		</h1>
+		<pre data-fragment-index="0" class="fragment"><code>select * from geo.placefinder where text = "iit hyderabad"</code></pre>
+		<pre data-fragment-index="1" class="fragment"><code>&lt;latitude&gt;17.34725&lt;/latitude&gt;
+&lt;longitude&gt;78.428177&lt;/longitude&gt;</code></pre>
+		<pre data-fragment-index="2" class="fragment"><code>&lt;city&gt;Hyderabad&lt;/city&gt;
+&lt;county&gt;Hyderabad&lt;/county&gt;
+&lt;state&gt;Andhra Pradesh&lt;/state&gt;
+&lt;country&gt;India&lt;/country&gt;
+&lt;countrycode&gt;IN&lt;/countrycode&gt;
+&lt;statecode&gt;AP&lt;/statecode&gt;
+&lt;countycode/&gt;
+&lt;uzip&gt;500064&lt;/uzip&gt;
+&lt;woeid&gt;2295414&lt;/woeid&gt;</code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">Reverse Geocoding</font>
+		</h1>
+		<pre data-fragment-index="0" class="fragment"><code>select * from geo.placefinder where text="37.416275,-122.025092"
+and gflags="R"</code></pre>
+		<pre data-fragment-index="1" class="fragment"><code>&lt;line1&gt;718 1st Ave&lt;/line1&gt;
+&lt;line2&gt;Sunnyvale, CA 94089&lt;/line2&gt;
+&lt;line3/&gt;
+&lt;line4&gt;United States&lt;/line4&gt;
+&lt;house&gt;718&lt;/house&gt;
+&lt;street&gt;1st Ave&lt;/street&gt;</code></pre>
+
+		<pre data-fragment-index="2" class="fragment"><code>&lt;postal&gt;94089&lt;/postal&gt;
+&lt;city&gt;Sunnyvale&lt;/city&gt;
+&lt;county&gt;Santa Clara&lt;/county&gt;
+&lt;state&gt;California&lt;/state&gt;
+&lt;country&gt;United States&lt;/country&gt;
+&lt;countrycode&gt;US&lt;/countrycode&gt;
+&lt;statecode&gt;CA&lt;/statecode&gt;
+&lt;uzip&gt;94089&lt;/uzip&gt;
+&lt;hash&gt;23370B9241162954&lt;/hash&gt;
+&lt;woeid&gt;12797150&lt;/woeid&gt;
+&lt;woetype&gt;11&lt;/woetype&gt;</code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 150px;">WOEID</font>
+		</h1>
+		<h2 data-fragment-index="0" class="fragment">Where On Earth ID</h2>
+		<p>
+			<br>
+		</p>
+		</section>
+		<section>
+		<h1>WOEID</h1>
+		<pre data-fragment-index="0" class="fragment"><code>http://where.yahooapis.com/v1/places.q('hitech city')?appid=xyz</code></pre>
+		<pre data-fragment-index="1" class="fragment"><code>&lt;place yahoo:uri="http://where.yahooapis.com/v1/place/55924382" xml:lang="en-US"&gt;
+&lt;woeid&gt;55924382&lt;/woeid&gt;
+&lt;placeTypeName code="22"&gt;Suburb&lt;/placeTypeName&gt;
+&lt;name&gt;Hitech City&lt;/name&gt;
+&lt;country type="Country" code="IN" woeid="23424848"&gt;India&lt;/country&gt;
+&lt;admin1 type="State" code="IN-AP" woeid="2345740"&gt;Andhra Pradesh&lt;/admin1&gt;
+&lt;admin2 type="District" code="" woeid="12586344"&gt;Rangareddi&lt;/admin2&gt;
+&lt;admin3/&gt;
+&lt;locality1 type="Town" woeid="2295414"&gt;Hyderabad&lt;/locality1&gt;
+&lt;locality2 type="Suburb" woeid="55924382"&gt;Hitech City&lt;/locality2&gt;</code></pre>
+		</section>
+		<section>
+		<h1>WOEID</h1>
+		<pre data-fragment-index="0" class="fragment"><code>http://where.yahooapis.com/v1/place/55924382?appid=xyz&amp;format=json</code></pre>
+		<pre data-fragment-index="1" class="fragment"><code>{
+"place": {
+"woeid": 55924382,
+"placeTypeName": "Suburb",
+"placeTypeName attrs": {
+"code": 22
+},
+"name": "Hitech City",
+"country": "India",
+"country attrs": {
+"type": "Country",
+"code": "IN",
+"woeid": 23424848
+},
+"locality2": "Hitech City",
+"locality2 attrs": {
+"type": "Suburb",
+"woeid": 55924382
+},
+"postal": "",
+"centroid": {
+"latitude": 17.43684,
+"longitude": 78.37886
+},
+"boundingBox": {
+"southWest": {
+"latitude": 17.414539,
+"longitude": 78.361282
+},
+"northEast": {
+"latitude": 17.459141,
+"longitude": 78.396446
+}
+},
+"areaRank": 2,
+"popRank": 0,
+"uri": "http://where.yahooapis.com/v1/place/55924382",
+"lang": "en-US"
+}
+}</code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px; text-transform: none">Yahoo! GeoPlanet</font>
+		</h1>
+		<pre data-fragment-index="0" class="fragment"><font style="font-size: 32px;"><code>http://developer.yahoo.com/geo/geoplanet/ </code></font></pre>
+		<p>
+			<br>
+		</p>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px; text-transform: none">Yahoo! GeoPlanet</font>
+		</h1>
+		<br>
+		<pre class="fragment"><font style="font-size: 32px;"><code>geo.places.ancestors
+geo.places.belongtos
+geo.places.children
+geo.places.common
+geo.places.descendants
+geo.places.neighbors
+geo.places.parent
+geo.places.siblings</code></font></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px; text-transform: none">GeoPlanet Explorer</font>
+		</h1>
+		<pre><font style="font-size: 32px;"><code>http://isithackday.com/geoplanet-explorer/</code></font></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">geo.placemaker</font>
+		</h1>
+		<pre class="fragment"><code>SELECT * FROM geo.placemaker WHERE documentContent = 
+"While Deepika is from Bangalore, Bipasha is from Kolkata 
+they predominantly act in movies made in Mumbai"
+AND documentType="text/plain"</code></pre>
+		<pre class="fragment">
+<code>&lt;matches&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;2295420&lt;/woeId&gt;
+&lt;type&gt;Town&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Bangalore, Karnataka, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;12.9558&lt;/latitude&gt;
+&lt;longitude&gt;77.621&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;2295386&lt;/woeId&gt;
+&lt;type&gt;Town&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Kolkata, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.5499&lt;/latitude&gt;
+&lt;longitude&gt;88.3716&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;2295411&lt;/woeId&gt;
+&lt;type&gt;Town&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Mumbai, Maharashtra, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;19.0762&lt;/latitude&gt;
+&lt;longitude&gt;72.8759&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;/matches&gt;</code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">geo.placemaker</font>
+		</h1>
+		<pre class="fragment"><code>SELECT * FROM geo.placemaker WHERE documentURL = 
+"www.telegraphindia.com/1120323/jsp/calcutta/index.jsp"
+AND documentType="text/html"</code></pre>
+		<pre class="fragment"><code>&lt;matches&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;29274615&lt;/woeId&gt;
+&lt;type&gt;POI&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Hatibagan Market, Kolkata, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.5944&lt;/latitude&gt;
+&lt;longitude&gt;88.3705&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;2295386&lt;/woeId&gt;
+&lt;type&gt;Town&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Kolkata, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.5499&lt;/latitude&gt;
+&lt;longitude&gt;88.3716&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;29281863&lt;/woeId&gt;
+&lt;type&gt;Drainage&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Salt Lake, Bidhan Nagar, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.5875&lt;/latitude&gt;
+&lt;longitude&gt;88.4192&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;56518419&lt;/woeId&gt;
+&lt;type&gt;POI&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Metro, Kolkata, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.4957&lt;/latitude&gt;
+&lt;longitude&gt;88.3988&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;23424848&lt;/woeId&gt;
+&lt;type&gt;Country&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[India]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;21.7866&lt;/latitude&gt;
+&lt;longitude&gt;82.7948&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;match&gt;
+&lt;place xmlns="http://wherein.yahooapis.com/v1/schema"&gt;
+&lt;woeId&gt;29271178&lt;/woeId&gt;
+&lt;type&gt;POI&lt;/type&gt;
+&lt;name&gt;&lt;![CDATA[Calcutta University, Kolkata, West Bengal, IN]]&gt;&lt;/name&gt;
+&lt;centroid&gt;
+&lt;latitude&gt;22.5749&lt;/latitude&gt;
+&lt;longitude&gt;88.3631&lt;/longitude&gt;
+&lt;/centroid&gt;
+&lt;/place&gt;
+&lt;/match&gt;
+&lt;/matches&gt; </code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">Putting It Together</font>
+		</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/45536/geomaker.png">
+		<br>
+		<br>
+		<pre class="fragment"><code>Demo: http://icant.co.uk/geomaker/index.php
+Code: https://github.com/codepo8/GeoMaker</code></pre>
+		<br>
+		<br>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 112px;">Interesting hacks</font>
+		</h1>
+		<img class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46112/image48.png">
+		<pre class="fragment"><code>http://trendsmap.com/local/india</code></pre>
+		<br>
+		</section>
+		<section>
+		<h1>&nbsp; <font style="font-size: 112px;">Awesome Apps</font>
+		</h1>
+		<img style="" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46142/image51.png">
+		<img style="" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46150/image53.png">
+		<br>
+		<img style="" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46141/image50.png">
+		<img style="zoom: 150%" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46147/image54.png">
+		<img style="zoom: 120%" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46144/image52.png">
+		</section>
+		<section>
+		<h1><font style="font-size: 112px;">Awesome Apps</font>
+		</h1>
+		<img class="fragment" style="width: 924px; height: 509px; max-height: none; max-width: none; z-index: 4; left: 0px; top: 136px;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46153/image55.png">
+		</section>
+		<section>
+		<h1><font style="font-size: 112px;">AUGMENTED REALITY</font>
+		</h1>
+		<img data-fragment-index="0" style="width: 408px; height: 308px; margin: 0px" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46735/image57.png">
+		<img data-fragment-index="1" style="width: 408px; height: 308px; margin: 0px" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46736/image58.png">
+		<img data-fragment-index="2" style="width: 360px; height: 272px; margin: 0px" class="fragment" src="https://s3.amazonaws.com/media-p.slid.es/uploads/souravzzz/images/46733/image56.png">
+		</section>
+		<section>
+		<h1><font style="font-size: 112px;">Useful Resources</font>
+		</h1>
+		<pre><code>http://developer.yahoo.com/geo/
+http://isithackday.com/hacks/geo/
+http://isithackday.com/geoplanet-explorer/
+http://developer.yahoo.com/geo/geoplanet/data/</code></pre>
+		</section>
+		<section>
+		<h1>
+		<font style="font-size: 220px;">Questions?</font>
+		</h1>
+		</section>
+	</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+</body>
+</html>
+
